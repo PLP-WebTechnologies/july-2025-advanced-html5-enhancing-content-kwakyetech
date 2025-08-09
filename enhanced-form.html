@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Content & Form Demo</h1>
+    <p>Lists, tables, media, and advanced HTML5 forms with native validation</p>
+</header>
+
+<main>
+    <!-- LIST SECTION -->
+    <section>
+        <h2>Popular Programming Languages</h2>
+        <p>Here’s a list of programming languages popular among developers:</p>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+        </ul>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Developer Salary Comparison (2025)</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Average Salary (USD)</th>
+                    <th>Experience Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>$95,000</td>
+                    <td>Mid-level</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>$105,000</td>
+                    <td>Senior</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>$98,000</td>
+                    <td>Mid-level</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Learn HTML5 Basics</h2>
+        <p>Watch the video below to understand the fundamentals of HTML5:</p>
+        <video controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>And here’s a short audio clip:</p>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section>
+        <h2>HTML5 Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?\d{10,15}$" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="6">
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select Country --</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Assignment Demo | Designed for Educational Purposes</p>
+</footer>
+
+</body>
+</html>
